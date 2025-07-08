@@ -28,6 +28,7 @@ vis.events.subscribe(vis.events.FILE_OPEN, function(file)
     if bom then
       file:delete(0, 3)
     end
+    file.modified = false
   end
 end)
 
